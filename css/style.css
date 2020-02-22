@@ -1,0 +1,127 @@
+body {
+  font-family: Calibri, Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+body#index {
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+  Main Header
+*/
+.main-header {
+  background-color: #222;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+.main-header ul {
+  margin: 24px 0;
+}
+
+.main-header ul li {
+  color: lightgray;
+  cursor: not-allowed;
+  display: inline;
+  padding: 12px;
+}
+
+.main-header ul li a {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/*
+  Main Section
+*/
+.main-section {
+  float: left;
+  width: calc(100% - 161px);
+}
+
+.main-section .title-container {
+  background-color: white;
+  width: 100%;
+}
+
+.main-section .title-container h1 {
+  margin: 0;
+  padding: 8px 16px;
+}
+
+/*
+  Sidebar
+*/
+.sidebar {
+  background-color: #9be;
+  border-right-color: darkslategray;
+  border-right-style: solid;
+  border-right-width: 3px;
+  box-sizing: border-box;
+  float: left;
+  height: calc(100vh - 72.8px - 51.2px + 1px);
+  margin: 0;
+  padding: 8px 24px 8px 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 24px;
+}
+
+.sidebar ul .lien-externe {
+  list-style-image: url(../images/fleche-12x12.png);
+}
+
+.sidebar ul li a {
+  color: black;
+  display: block;
+  line-height: 24px;
+  text-decoration: none;
+  width: 102px;
+}
+
+.sidebar ul li a:hover {
+  color: firebrick;
+  font-weight: bold;
+}
+
+/*
+  Main Footer
+*/
+.main-footer {
+  background-color: #222;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+.main-footer p {
+  color: white;
+  margin: 16px;
+}
+
+/*
+  Autres éléments
+*/
+.clear {
+  clear: both;
+}
+
+.backdrop {
+  background-color: cornsilk;
+  height: 100vh;
+  opacity: 0.5;
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+}
