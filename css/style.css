@@ -5,7 +5,7 @@ body {
 }
 
 body#index {
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,25 +14,25 @@ body#index {
 /*
   Main Header
 */
-.main-header {
+#main-header {
   background-color: #222;
   float: left;
   margin: 0;
   width: 100%;
 }
 
-.main-header ul {
+#main-header ul {
   margin: 24px 0;
 }
 
-.main-header ul li {
+#main-header ul li {
   color: lightgray;
   cursor: not-allowed;
   display: inline;
   padding: 12px;
 }
 
-.main-header ul li a {
+#main-header ul li a {
   color: white;
   cursor: pointer;
   font-size: 20px;
@@ -43,17 +43,17 @@ body#index {
 /*
   Main Section
 */
-.main-section {
+#main-section {
   float: left;
   width: calc(100% - 161px);
 }
 
-.main-section .title-container {
+#main-section .title-container {
   background-color: white;
   width: 100%;
 }
 
-.main-section .title-container h1 {
+#main-section .title-container h1 {
   margin: 0;
   padding: 8px 16px;
 }
@@ -61,7 +61,7 @@ body#index {
 /*
   Sidebar
 */
-.sidebar {
+#sidebar {
   background-color: #9be;
   border-right-color: darkslategray;
   border-right-style: solid;
@@ -73,16 +73,16 @@ body#index {
   padding: 8px 24px 8px 8px;
 }
 
-.sidebar ul {
+#sidebar ul {
   list-style: none;
   padding-left: 24px;
 }
 
-.sidebar ul .lien-externe {
+#sidebar ul .lien-externe {
   list-style-image: url(../images/fleche-12x12.png);
 }
 
-.sidebar ul li a {
+#sidebar ul li a {
   color: black;
   display: block;
   line-height: 24px;
@@ -90,7 +90,7 @@ body#index {
   width: 102px;
 }
 
-.sidebar ul li a:hover {
+#sidebar ul li a:hover {
   color: firebrick;
   font-weight: bold;
 }
@@ -98,16 +98,25 @@ body#index {
 /*
   Main Footer
 */
-.main-footer {
+#main-footer {
   background-color: #222;
   float: left;
   margin: 0;
   width: 100%;
 }
 
-.main-footer p {
+#main-footer p {
   color: white;
   margin: 16px;
+}
+
+#main-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  color: firebrick;
 }
 
 /*
@@ -117,8 +126,8 @@ body#index {
   clear: both;
 }
 
-.backdrop {
-  background-color: cornsilk;
+#backdrop {
+  background-color: white;
   height: 100vh;
   opacity: 0.5;
   position: fixed;
